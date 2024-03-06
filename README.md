@@ -15,3 +15,14 @@ CSS Style
 Font and Images
     - next/font it will download font on building that mean it will be static font
     - next/image we should to set width and height to avoid shift on different screen 
+
+Layouts and Pages
+    - next.js already includes nest routing by it will be binding with folder project
+    - we can use page.tsx to declare it will be page and route such as
+        - / => /app/page.tsx
+        - /dashboard => /app/dashboard/page.tsx 
+        - /dashboard/invoice => /app/dashboard/invoice/page.tsx 
+    - when we use layout we must to pass children as props to render children can be page or another layout
+    - from example layout will wrap all page on dashboard route so children will render only page and nest page on dashboard
+    - while it will navigate route only component will be update but layout doesn't re-render that we call partial rendering
+     
