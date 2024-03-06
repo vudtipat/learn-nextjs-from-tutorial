@@ -25,4 +25,8 @@ Layouts and Pages
     - when we use layout we must to pass children as props to render children can be page or another layout
     - from example layout will wrap all page on dashboard route so children will render only page and nest page on dashboard
     - while it will navigate route only component will be update but layout doesn't re-render that we call partial rendering
-     
+
+Link
+    - <a/> and <Link/> use to navigate page but it different <a/> it will be server side navigate so it will full page refresh but <Link/> it is client side navigate so it will not full page refresh because <Link/> will be prefetch code for linking route
+    - We cab do active link on rendering by use usePathname that be Client Component. 
+    - If we want to use client component we must to declare "use client" on top of file
